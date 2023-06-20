@@ -1,6 +1,6 @@
 const Security = require('../security/verifyUser');
-const Product = require('/services/productsWebshop.services');
-const Customer = require('/services/customerWebshop.service');
+const Product = require('../services/productsWebshop.services');
+const Customer = require('../services/customerWebshop.service');
 
 async function allProducts(req, res) {
   await Security.validateFirebaseIdToken(req, res, async() => {
