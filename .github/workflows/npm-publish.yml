@@ -30,4 +30,5 @@ jobs:
       if: ${{ success() }}
       run: |
         gcloud builds submit --tag gcr.io/mspr-payetonkawa-95a92/webshop
+        gcloud beta run services add-iam-policy-binding --region=us-central1 --member=allUsers --role=roles/run.invoker mspr-payetonkawa-95a92-webshop
         gcloud run deploy mspr-payetonkawa-95a92-webshop --image gcr.io/mspr-payetonkawa-95a92/webshop --platform managed --region us-central1 --allow-unauthenticated --port=8081
