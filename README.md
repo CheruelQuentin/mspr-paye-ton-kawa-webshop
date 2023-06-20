@@ -10,7 +10,7 @@ gcloud builds submit --tag gcr.io/mspr-payetonkawa-95a92/webshop
 
 2. Add to GCP
 ```
-gcloud run deploy mspr-payetonkawa-95a92 
+gcloud run deploy mspr-payetonkawa-95a92-webshop 
     --image gcr.io/mspr-payetonkawa-95a92/webshop  
     --platform managed  
     --region us-central1  

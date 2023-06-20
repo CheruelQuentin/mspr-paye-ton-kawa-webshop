@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=development&&nodemon ./index.js",
-    "test": "jest src/tests/revendeur.test.js --coverage",
-    "prod": "NODE_ENV=development&&node ./index.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "dev": "set NODE_ENV=development&&nodemon ./index.js",
+    "test": "jest tests/webshop.test.js --coverage",
+    "prod": "NODE_ENV=development&&node ./index.js"
   },
   "author": "",
   "license": "ISC",
